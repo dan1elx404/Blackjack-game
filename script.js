@@ -5,6 +5,14 @@ let isAlive = false
 let hasStarted = false
 let message = ""
 
+//player object
+let player = {
+    name:"D",
+    chips: 150
+}
+let playerEl = document.getElementById("player")
+playerEl.innerHTML = player.name +": $"+player.chips
+
 //these are our rendering elements from our js file 
 let cardsEl = document.getElementById("a1")
 let sumEl = document.querySelector("#a2")
@@ -16,7 +24,6 @@ let messageEl = document.getElementById("message")
 //following our blackjack rule if we get 1 it translates to 11 and if we get (11,12,13) it translates to 10 
 function randomNumber(){
     let number = Math.floor(Math.random() * 13) + 1;
-
     console.log(number);
 
     if (number === 1){
