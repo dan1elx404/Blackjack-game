@@ -1,0 +1,35 @@
+body{
+ text-align: center;
+ background-color: rgb(0, 110, 0);
+}
+.title {
+	color:goldenrod;
+}
+
+#a1, #a2, #message {
+  font-size: large;
+  color: white;
+  font-weight: bolder;
+}
+#btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#start-btn{
+  background-color: goldenrod;
+  width: 150px;
+  padding: 6px 10px;
+  font-weight: bolder;
+  color: rgb(0, 110, 0) ;
+  border: none;
+  margin-bottom: 10px;
+}
+#new-btn{
+  background-color: goldenrod;
+  width: 150px;
+  padding: 6px 10px;
+  font-weight: bolder;
+  color: rgb(0, 110, 0) ;
+  border: none;
+}
